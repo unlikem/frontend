@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fe 6</title>
+        <script src="game.js"></script>
+        <style>
+             .gua-hide {
+                 display: none;
+             }
+             .gua-menu-content {
+                 height: 100px;
+                 border: 1px solid red;
+             }
+             .gua-item {
+                 /* display: inline-block; */
+                 filter: grayscale(100%);
+             }
+             .gua-item.gua-highlight {
+                 filter: initial;
+             }
+             .gua-item.gua-highlight img {
+                 width: 400px;
+                 height: 300px;
+             }
+             img {
+                 transition: width 1s,height 1s;
+             }
+             .gua-item img {
+                 width: 300px;
+                 height: 200px;
+             }
+             .gua-slide {
+                 position: relative;
+             }
+             .gua-slide-image {
+                 display: none;
+             }
+             .gua-active {
+                 display: inline-block;
+             }
+             .gua-slide-button {
+                 left: 600px;
+                 height: 50px;
+             }
+             .gua-vertical-center {
+                 position: absolute;
+                 top: 50%;
+                 transform: translateY(-50%);
+             }
+             .gua-slide-indi {
+                 display: inline-block;
+                 width: 10px;
+                 height: 10px;
+                 border-radius: 50%;
+                 background: red;
+             }
+             .gua-white {
+                 background: white;
+             }
+        </style>
+    </head>
+    <body>
+        <!-- 1, 点击显示的菜单 -->
+        <div class="gua-1 gua-hide">
+            <div class="gua-menu">
+                <button class="gua-menu-toggle">点击展开详情</button>
+                <div class="gua-menu-content">
+                    详情
+                </div>
+            </div>
+            <div class="gua-menu">
+                <button class="gua-menu-toggle">点击展开详情</button>
+                <div class="gua-menu-content">
+                    详情
+                </div>
+            </div>
+        </div>
+        <!-- <script src="first.js"></script> -->
+        <div class="gua-2 gua-hide">
+            <div class="gua-list">
+                <div class="gua-item">
+                    <img src="pic/1.jpg" alt="">
+                </div>
+                <div class="gua-item">
+                    <img src="pic/2.jpg" alt="">
+                </div>
+                <div class="gua-item">
+                    <img src="pic/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <script src="second.js"></script> -->
+        <div class="gua-3">
+            <div class="gua-slide" data-imgs=3 data-active=0>
+                <img id=id-guaimage-0 class="gua-slide-image gua-active" src="slideimages/1.jpg "alt="">
+                <img id=id-guaimage-1 class="gua-slide-image" src="slideimages/2.jpg "alt="">
+                <img id=id-guaimage-2 class="gua-slide-image" src="slideimages/3.jpg "alt="">
+                <button class="gua-slide-button gua-vertical-center">下一张</button>
+                <div class="gua-slide-indicators">
+                    <div class="gua-slide-indi gua-white"></div>
+                    <div class="gua-slide-indi "></div>
+                    <div class="gua-slide-indi "></div>
+                </div>
+            </div>
+        </div>
+        <script src="third.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
