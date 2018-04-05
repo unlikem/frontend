@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>property types</title>
+    </head>
+    <body>
+        <form action="">
+            <input class="u-txt" maxlength="10" 
+            disabled onclick="showSuggest();">
+        </form>
+        <script>
+            var input = document.getElementsByTagName('input')[0];
+            function showSuggest(){}
+            
+            console.log('class property的类型是：' + typeof(input.className))
+            console.log('maxlength property的类型是：' +
+            typeof(input.maxLength))
+            console.log('disabled property的类型是：' + typeof(input.disabled))
+            console.log('onclick property的类型是：' + typeof(input.onclick))
+        </script>
+    </body>
+</html>
