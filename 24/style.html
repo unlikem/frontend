@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>style - 更新样式</title>
+        <style>
+        button {
+            padding: 4px 5px;
+            margin-left: 10px;
+        }
+
+        .u-txt {
+            width: 215px;
+            padding: 4px 5px;
+            border: 1px solid #ababab;
+            border-radius: 3px;
+            box-shadow: 2px 2px 3px #ededed inset;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <input id="mobile" class="u-txt" value="123564782365">
+        <button id="update">更新样式</button>
+        <script src="util.js"></script>
+        <script>
+            flag = true
+            Util.addEventListener($('update'), 'click', updateStyle)
+            
+            function updateStyle() {
+                if (flag) {
+                    var element = $('mobile')
+                    
+                    element.style.borderColor = 'red'
+                    element.style.color = 'red'
+                    flag = false
+                }
+                else {
+                    var element = $('mobile')
+                    
+                    element.style.borderColor = 'black'
+                    element.style.color = 'black'
+                    flag = true
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
