@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>组件</title>
+        <style>
+            .gua-hide {
+                display: none;
+            }
+            .gua-menu-content {
+                height: 100px;
+                width: 100px;
+                border: 1px solid red;
+            }
+            .gua-item {
+                filter: grayscale(100%);
+                /* opacity: 0.6; */
+            }
+            .gua-highlight {
+                filter: initial;
+                /* opacity: 1; */
+            }
+            .gua-item.gua-highlight img{
+                width: 150px;
+                height: 150px;
+            }
+            .gua-item img {
+                width: 100px;
+                height: 100px;
+            }
+            img {
+                transition: width 1s;
+            }
+            .gua-slide{
+                position: relative;
+            }
+            .gua-slide-image {
+                display: none;
+            }
+            .gua-active {
+                display: block;
+            }
+            .gua-slide-button {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100px;
+            }
+        </style>                
+    </head>
+    <body>
+        <div class="gua_1 gua-hide">
+            <div class="gua-menu">
+                <button class="gua-menu-toggle">点击展开详情</button>
+                <div class="gua-menu-content">
+                    详情
+                </div>
+            </div>
+            <div class="gua-menu">
+                <button class="gua-menu-toggle">点击展开详情</button>
+                <div class="gua-menu-content">
+                    详情
+                </div>
+            </div>
+        </div>
+        
+        <div class="gua_2 gua-hide">
+            <div class="gua-list">
+                <div class="gua-item">
+                    <img src="1.jpg" class="gua-item-pic">
+                </div>
+                <div class="gua-item">
+                    <img src="2.jpg" class="gua-item-pic">
+                </div>
+                <div class="gua-item">
+                    <img src="3.jpg" class="gua-item-pic">
+                </div>
+            </div>
+        </div>
+        
+        <div class="gua_3">
+            <div class="gua-slide" data-imgs = 3 data-active = 0>
+                <img id="id-guaimage-0" src="slideimages/1.jpg" class="gua-slide-image gua-active">
+                <img id="id-guaimage-1" src="slideimages/2.jpg" class="gua-slide-image">
+                <img id="id-guaimage-2" src="slideimages/3.jpg" class="gua-slide-image">
+                <button class="gua-slide-button">上一张</button>
+            </div>            
+        </div>
+        
+        <script src="gua.js"></script>
+        <script src="05.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
