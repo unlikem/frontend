@@ -15,7 +15,7 @@
 
 1, 安装 create-react-app, -g 表示全局安装
     这是一个用于创建 react 项目的程序
-create-react-app
+npm install -g create-react-app
 
 2, 使用 create-react-app 创建项目并初始化(注意 npm start 是 npm run start 的缩写)
 create-react-app gua
