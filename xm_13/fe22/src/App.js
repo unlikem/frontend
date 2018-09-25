@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Message from './message'
-import Timer from './timer'
-import TodoApp from './todo'
-import MarkdownEditor from './editor'
+import Message from './message.js'
+import Timer from './timer.js'
+import TodoApp from './todo.js'
+import MarkdownEditor from './editor.js'
 
 
 // 程序的主入口
