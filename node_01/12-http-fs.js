@@ -30,7 +30,7 @@ server.on('request', function (req, res) {
         res.end(data)
       }
     })
-  } else if (url === '/xiaoming') {
+} else if (url === '/baby') {
     // url：统一资源定位符
     // 一个 url 最终其实是要对应到一个资源的
     fs.readFile('./resource/ab2.jpg', function (err, data) {
