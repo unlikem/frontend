@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>vue_01</title>
+    </head>
+    <body>
+        <div id="app">
+            <label>
+                男
+                <input v-model="sex" value="male" type="radio">
+            </label>
+            <label>
+                女
+                <input v-model="sex" value="female" type="radio">
+            </label>
+            <div>你要去哪里</div>
+            <select v-model="from">
+                <option value="1">东京</option>
+                <option value="2">京都</option>
+            </select>
+            <div>你要去哪里</div>
+            <select v-model="des" multiple>
+                <option value="1">东京</option>
+                <option value="2">京都</option>
+            </select>
+        </div>
+        <script src="../lib/vue.js"></script>
+        <script src="js/main.js"></script>        
+    </body>
+</html>

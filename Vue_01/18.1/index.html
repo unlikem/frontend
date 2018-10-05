@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>vue_01</title>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <input type="text" v-model="name">
+                <span>你的名字是: {{name}}</span>
+            </div>
+            <div>
+                <input type="text" v-model="age">
+                <span>你的年龄是: {{age}}</span>
+            </div>
+            <div>
+                <input type="text" v-model="gender">
+                <span>你的性别是: {{gender}}</span>
+            </div>
+        </div>
+        <script src="../lib/vue.js"></script>
+        <script src="js/main.js"></script>        
+    </body>
+</html>

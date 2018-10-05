@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>vue_01</title>
+    </head>
+    <body>
+        <div id="app">
+            <button v-on:click="onClick">点我</button>
+            <form v-on:submit.prevent="onSubmit()">
+                <input type="text">
+                <div>
+                    <button type="submit">提交</button>
+                </div>                
+            </form>
+        </div>
+        <script src="../lib/vue.js"></script>
+        <script src="js/main.js"></script>        
+    </body>
+</html>
